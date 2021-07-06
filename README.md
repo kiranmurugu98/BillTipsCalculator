@@ -1,0 +1,3 @@
+# BillTipsCalculator
+
+Appiness Assignment Project
