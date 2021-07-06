@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/myapp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMxDj8iMQA8-IYAbUk5WdIbDySZD5e0E"></script>
+
+<body>
+    <div class="d-flex container mt-5 mb-3">
+        <div class="child">
+
+
+            <h5 class="offset-3 mt-2"><u>BILL/TIP CALCULATOR</u></h5>
+            <form class="form col-6">
+                <input class="form-control" type="number" id="billamount" placeholder="Enter the Bill Amount">
+                <br>
+                <select id="tippercent" class="form-control">
+                    <option selected value="0">How was the service <b>&darr;</b> </option>
+                    <option value="0.1"> Outstanding</option>
+                    <option value="0.08"> Good</option>
+                    <option value="0.06">It was OK</option>
+                    <option value="0.04"> Bad</option>
+                    <option value="0.02">Poor</option>
+                </select><br>
+
+                <input type="number" id="people" placeholder="Enter the no of person" class="form-control">
+                <br> <button class="btn btn-primary" id="submit">Submit</button>
+            </form>
+            <br>
+
+            <!-- <div class='outcome mb-3 mt-2'>
+
+                <label class="form-label" for="tip"><b>Tip Amount In RS :</b></label>
+                <input class="form-control" type="number" for="tip" id="tipamount" disabled>
+                <label class="form-label" for="tip"><b>Total Bill Amount In RS :</b></label>
+                <input class="form-control" type="number" for="bill" id="totalbillamount" disabled>
+                <label class="form-label" for="tip"><b>Share Per Person In RS :</b></label>
+                <input class="form-control" type="number" for="bill" id="person" disabled>
+            </div> -->
+            <div>
+                <p class="form-label"><b>Tip amount in ₹ :</b><span id="tipamount"> 0 </span></p>
+                <p class="form-label"><b>Total amount in ₹ :</b><span id="totalbillamount"> 0 </span></p>
+                <p class="form-label"><b>Each person shares in ₹ :</b> <span id="person"> 0 </span></p>
+
+            </div>
+
+            <div id="map"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/myapp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+
+
+
+</html>
